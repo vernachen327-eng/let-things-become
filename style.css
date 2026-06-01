@@ -26,8 +26,8 @@ a { color: inherit; text-decoration: none; }
 
 .hero-img, .article-hero-img {
     display: block;
-    max-width: 20%;
-    max-height: 14vh;
+    max-width: 40%;
+    max-height: 28vh;
     width: auto;
     height: auto;
     margin: 0 auto;
