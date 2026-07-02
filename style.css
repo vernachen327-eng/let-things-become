@@ -16,8 +16,8 @@ body {
         radial-gradient(ellipse at 85% 100%, rgba(70,120,160,0.10) 0%, transparent 50%),
         var(--bg);
     color: var(--text);
-    font-family: 'Ma Shan Zheng', 'Noto Serif TC', Georgia, serif;
-    font-size: 18px;
+    font-family: 'Shippori Mincho', 'Noto Serif TC', Georgia, serif;
+    font-size: 36px;
     line-height: 1.9;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
