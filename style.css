@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --bg: #2b1f08;
+    --bg: #1e2e3a;
     --gold: #c9a84c;
     --gold-dim: rgba(201,168,76,0.25);
     --cream: #f5ead0;
@@ -12,8 +12,8 @@ html { scroll-behavior: smooth; }
 
 body {
     background:
-        radial-gradient(ellipse at 15% 0%, rgba(201,168,76,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 85% 100%, rgba(180,130,30,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 15% 0%, rgba(100,155,190,0.18) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 100%, rgba(70,120,160,0.12) 0%, transparent 50%),
         var(--bg);
     color: var(--cream);
     font-family: 'Noto Serif TC', Georgia, serif;
