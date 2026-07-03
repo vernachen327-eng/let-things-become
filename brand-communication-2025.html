@@ -228,7 +228,7 @@ footer {
 <!-- ══════════ CASE 01 ══════════ -->
 
 <div class="case-wrap">
-  <div class="page-info" style="background:#c4a8a8;">
+  <div class="page-info" style="background:#d4887a;">
     <p class="case-number">CASE 01 / 10</p>
     <span class="case-region">台灣</span>
     <p class="case-brand">可口可樂台灣 × Ogilvy Taiwan</p>
@@ -245,35 +245,84 @@ footer {
       </div>
     </div>
   </div>
-  <div class="page-kv" style="background:#f8efef;">
+  <div class="page-kv" style="background:#fde8e0;">
     <p class="kv-label">Key Visual</p>
-    <p class="kv-title">素人表情瞬間 × TikTok 病毒擴散</p>
-    <p class="kv-desc">以一口冰可樂引發的最真實反應作為主視覺素材——皺眉、閉眼、笑開懷——組成一面由真實臉孔構成的品牌牆。去除精緻感，用「不完美的真實」打入 Z 世代的社群語言。</p>
+    <p class="kv-title">系統自動抓取真實表情 → 生成品牌主視覺</p>
+    <p class="kv-desc">用戶上傳喝下第一口冰可樂的反應影片，AI 自動擷取表情瞬間，拼成由真人臉孔構成的可口可樂 Logo 主視覺。不是廣告，是一千個真實的你。</p>
+
+    <!-- 表情 UGC 拼成主視覺 -->
     <div style="display:flex;justify-content:center;margin:2rem 0 2.5rem;">
-      <svg width="380" height="220" viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg">
+      <svg width="420" height="340" viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="coke-grad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#e8282a"/>
-            <stop offset="100%" stop-color="#c01818"/>
-          </linearGradient>
+          <radialGradient id="kv-bg" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#fdf0eb"/>
+            <stop offset="100%" stop-color="#f8ddd4"/>
+          </radialGradient>
         </defs>
-        <rect width="380" height="220" rx="8" fill="#1a1a1a"/>
-        <!-- 可口可樂紅圓形Logo背景 -->
-        <circle cx="190" cy="110" r="85" fill="url(#coke-grad)" opacity="0.9"/>
-        <!-- Coke波浪 -->
-        <path d="M115,115 Q145,100 175,115 Q205,130 235,115 Q255,105 265,115" fill="none" stroke="#fff" stroke-width="3" opacity="0.7"/>
-        <!-- 品牌文字 -->
-        <text x="190" y="102" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="28" font-weight="700" fill="#fff" letter-spacing="2">Coca-Cola</text>
-        <text x="190" y="130" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="12" fill="#fff" letter-spacing="4" opacity="0.85">就是這個夏</text>
-        <!-- TikTok 標籤 -->
-        <rect x="148" y="145" width="84" height="22" rx="11" fill="#fff" opacity="0.15"/>
-        <text x="190" y="160" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="10" fill="#fff" letter-spacing="1">#就是這個夏</text>
-        <!-- 角落數據 -->
-        <text x="20" y="200" font-family="'Shippori Mincho',serif" font-size="9" fill="#aaa" letter-spacing="1">1.8億次觀看 ｜ TikTok UGC × Z世代</text>
-        <text x="360" y="200" text-anchor="end" font-family="'Shippori Mincho',serif" font-size="9" fill="#aaa">2024</text>
+        <rect width="420" height="340" rx="10" fill="url(#kv-bg)"/>
+
+        <!-- 標題文字 -->
+        <text x="210" y="28" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="11" fill="#c84020" letter-spacing="3" opacity="0.7">SYSTEM GENERATED BRAND KEY VISUAL</text>
+
+        <!-- 3×4 表情頭像牆（12 格） -->
+        <!-- Row 1 -->
+        <!-- 格1: 笑開懷 -->
+        <circle cx="72"  cy="80" r="36" fill="#e8c8b8"/>
+        <circle cx="62"  cy="72" r="5" fill="#3a2010"/><circle cx="82"  cy="72" r="5" fill="#3a2010"/>
+        <path d="M57,88 Q72,100 87,88" fill="none" stroke="#3a2010" stroke-width="3" stroke-linecap="round"/>
+        <path d="M64,92 Q72,98 80,92" fill="#e85030" stroke="none" opacity="0.4"/>
+
+        <!-- 格2: 眼睛閉上享受 -->
+        <circle cx="162" cy="80" r="36" fill="#f0d0b8"/>
+        <path d="M150,72 Q162,78 174,72" fill="none" stroke="#3a2010" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M156,90 Q162,100 168,90" fill="none" stroke="#3a2010" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- 格3: 驚訝O嘴 -->
+        <circle cx="252" cy="80" r="36" fill="#e8b8a0"/>
+        <circle cx="242" cy="71" r="5.5" fill="#3a2010"/><circle cx="262" cy="71" r="5.5" fill="#3a2010"/>
+        <ellipse cx="252" cy="90" rx="9" ry="12" fill="#c03020"/>
+
+        <!-- 格4: 皺眉好喝 -->
+        <circle cx="348" cy="80" r="36" fill="#f4d8c0"/>
+        <path d="M336,66 Q342,72 348,68" fill="none" stroke="#3a2010" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M348,68 Q354,72 360,66" fill="none" stroke="#3a2010" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="338" cy="74" r="5" fill="#3a2010"/><circle cx="358" cy="74" r="5" fill="#3a2010"/>
+        <path d="M338,92 Q348,100 358,92" fill="none" stroke="#3a2010" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Row 2 -->
+        <!-- 格5: 咧嘴笑 -->
+        <circle cx="72"  cy="172" r="36" fill="#f0c8a8"/>
+        <circle cx="62"  cy="164" r="5" fill="#2a1808"/><circle cx="82"  cy="164" r="5" fill="#2a1808"/>
+        <path d="M56,183 Q72,196 88,183" fill="none" stroke="#2a1808" stroke-width="3" stroke-linecap="round"/>
+        <rect x="64" y="183" width="16" height="8" rx="2" fill="#e8e8e8" opacity="0.9"/>
+
+        <!-- 格6: 回味眼神 -->
+        <circle cx="162" cy="172" r="36" fill="#ecc8b0"/>
+        <circle cx="152" cy="163" r="5.5" fill="#3a1808"/><circle cx="172" cy="163" r="5.5" fill="#3a1808"/>
+        <circle cx="154" cy="161" r="2" fill="#fff" opacity="0.7"/><circle cx="174" cy="161" r="2" fill="#fff" opacity="0.7"/>
+        <path d="M152,184 Q162,192 172,184" fill="none" stroke="#3a1808" stroke-width="2.5" stroke-linecap="round"/>
+
+        <!-- 格7: 舉起大拇指（emoji感） -->
+        <circle cx="252" cy="172" r="36" fill="#f4d0b4"/>
+        <circle cx="242" cy="163" r="5" fill="#2a1808"/><circle cx="262" cy="163" r="5" fill="#2a1808"/>
+        <path d="M242,185 Q252,194 262,185" fill="none" stroke="#2a1808" stroke-width="3" stroke-linecap="round"/>
+        <text x="252" y="200" text-anchor="middle" font-family="Arial" font-size="14">👍</text>
+
+        <!-- 格8: 驚喜瞇眼 -->
+        <circle cx="348" cy="172" r="36" fill="#e8c0a0"/>
+        <path d="M336,162 Q348,170 360,162" fill="none" stroke="#2a1808" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="348" cy="185" rx="10" ry="8" fill="#d03020" opacity="0.8"/>
+        <text x="348" y="189" text-anchor="middle" font-family="Arial" font-size="10" fill="#fff">ah!</text>
+
+        <!-- Row 3：Coke 品牌帶 -->
+        <rect x="20" y="228" width="380" height="88" rx="8" fill="#e8201a"/>
+        <!-- Coke wave -->
+        <path d="M20,254 Q105,236 210,254 Q315,272 400,254" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+        <text x="210" y="268" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="30" font-weight="700" fill="#fff" letter-spacing="2">Coca-Cola</text>
+        <text x="210" y="292" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="11" fill="#fff" letter-spacing="5" opacity="0.85">就是這個夏</text>
+        <text x="210" y="308" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="8.5" fill="#ffcccc" letter-spacing="1.5">1.8 億次觀看 ｜ #就是這個夏 ｜ TikTok UGC 2024</text>
       </svg>
     </div>
-    <a class="kv-link" href="https://www.marketersgo.com/cases/202205/youtuber-2/" target="_blank">→ 查看 Z 世代社群行銷案例（行銷人）</a>
   </div>
 </div>
 
