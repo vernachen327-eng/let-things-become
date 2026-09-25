@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陳佩珊 — 簡歷 · Let things become.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Serif+TC:wght@300;400;500&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #faf9f7;
+  --text: #1c1b19;
+  --text-dim: #4a4844;
+  --accent: #4a6b6a;
+  --accent-light: #e8f0ef;
+  --rule: #d4cfc6;
+  --tag-bg: #edf3f2;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans TC', 'PingFang TC', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2em 5% 0;
+}
+
+.nav-back {
+  font-size: 0.78em;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-decoration: none;
+  opacity: 0.65;
+  transition: opacity 0.2s;
+}
+.nav-back:hover { opacity: 1; }
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5em 5% 5em;
+}
+
+/* ── Header ── */
+.resume-header {
+  position: relative;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1.6em;
+  padding-right: 380px;
+  margin-bottom: 2.4em;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.88;
+}
+
+.name {
+  font-family: 'Shippori Mincho', 'Noto Serif TC', serif;
+  font-size: 2.4em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin-bottom: 0.2em;
+}
+
+.title-line {
+  font-size: 1em;
+  color: var(--accent);
+  font-weight: 400;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.02em;
+}
+
+.contact-line {
+  font-size: 0.88em;
+  color: var(--text-dim);
+}
+
+.contact-line a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-light);
+}
+
+/* ── Section ── */
+section { margin-bottom: 2.8em; }
+
+.section-label {
+  font-family: 'Shippori Mincho', 'Noto Serif TC', serif;
+  font-size: 0.78em;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ── Intro ── */
+.intro {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1em;
+  line-height: 2;
+  color: var(--text-dim);
+}
+
+/* ── Education ── */
+.edu-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 1.6em;
+  align-items: baseline;
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--rule);
+}
+.edu-row:last-child { border-bottom: none; }
+
+.edu-degree { font-size: 0.82em; color: var(--text-dim); min-width: 2.5em; }
+.edu-dept { font-size: 0.9em; color: var(--text-dim); }
+.edu-year { font-size: 0.85em; color: var(--text-dim); white-space: nowrap; }
+
+/* ── Experience ── */
+.exp-block { margin-bottom: 2em; }
+.exp-block:last-child { margin-bottom: 0; }
+
+.exp-org {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.1em;
+}
+
+.exp-meta { font-size: 0.86em; color: var(--accent); margin-bottom: 0.5em; }
+.exp-meta .role { font-weight: 500; }
+.exp-meta .period { color: var(--text-dim); margin-left: 0.8em; }
+
+.exp-bullets { list-style: none; padding: 0; }
+.exp-bullets li {
+  font-size: 0.93em;
+  color: var(--text-dim);
+  padding-left: 1.2em;
+  position: relative;
+  margin-bottom: 0.25em;
+}
+.exp-bullets li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--rule);
+}
+
+/* ── Course Tags ── */
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.6em;
+}
+
+.course-tag {
+  background: var(--tag-bg);
+  color: var(--accent);
+  font-size: 0.84em;
+  padding: 0.2em 0.8em;
+  border-radius: 6px;
+  border: 1px solid rgba(74,107,106,0.18);
+  text-decoration: none;
+}
+
+a.course-tag:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── Career Table ── */
+.career-table { width: 100%; border-collapse: collapse; font-size: 0.92em; }
+.career-table td {
+  padding: 0.45em 0.8em 0.45em 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--text-dim);
+}
+.career-table td:first-child { color: var(--text); font-weight: 400; width: 55%; }
+.career-table tr:last-child td { border-bottom: none; }
+
+/* ── Media ── */
+.media-list { list-style: none; padding: 0; }
+.media-list li {
+  font-size: 0.93em;
+  color: var(--text-dim);
+  padding: 0.4em 0 0.4em 1.4em;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.media-list li:last-child { border-bottom: none; }
+.media-list li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  font-size: 0.6em;
+  top: 0.7em;
+  color: var(--accent);
+  opacity: 0.5;
+}
+.media-list strong { color: var(--text); }
+
+/* ── Focus ── */
+.focus-tags { display: flex; flex-wrap: wrap; gap: 0.5em; }
+.focus-tag {
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 0.86em;
+  padding: 0.2em 0.9em;
+  border-radius: 20px;
+  border: 1px solid var(--rule);
+}
+
+footer {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 5% 3em;
+  font-size: 0.8em;
+  color: var(--text-dim);
+  opacity: 0.5;
+  text-align: center;
+}
+
+@media print {
+  body { font-size: 13px; }
+  .page { padding: 2em 4%; }
+  section { margin-bottom: 2em; }
+  nav, footer { display: none; }
+  .exp-block { page-break-inside: avoid; }
+}
+
+@media (max-width: 600px) {
+  .resume-header { padding-right: 0; }
+  .header-photo { position: static; width: 100%; height: 180px; margin-bottom: 1.2em; }
+  .name { font-size: 1.9em; }
+  .edu-row { grid-template-columns: 1fr; }
+  .edu-year { grid-column: 1; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-back" href="index.html">← Let things become.</a>
+</nav>
+
+<div class="page">
+
+  <header class="resume-header">
+    <img class="header-photo" src="https://raw.githubusercontent.com/vernachen327-eng/let-things-become-assets/main/resume-photo.jpg" alt="">
+    <h1 class="name">陳佩珊</h1>
+    <p class="title-line">人智學教育基金會 執行長<br>慈心華德福高中 兼課教師</p>
+    <p class="contact-line">
+      <a href="mailto:vernachen327@gmail.com">vernachen327@gmail.com</a><br>
+      台灣宜蘭
+    </p>
+  </header>
+
+  <section>
+    <div class="section-label">關於</div>
+    <p class="intro">
+      15 年兩岸三地奔波的行銷廣告生涯在成為母親後告一段落，第二人生從遇見慈心華德福啟程。2018 年起任職於非營利組織人智學教育基金會，2020 年擔任副執行長，2024 年至今擔任執行長。多年來作為與宜蘭縣政府公辦民營計畫的核心小組成員，長期經營家長社群文化，並為教師自治撐出辦學與教學空間。
+    </p>
+  </section>
+
+  <section>
+    <div class="section-label">學歷</div>
+    <div class="edu-row">
+      <span class="edu-degree">碩士</span>
+      <span>國立政治大學 <span class="edu-dept">廣告學系</span></span>
+      <span class="edu-year">2001</span>
+    </div>
+    <div class="edu-row">
+      <span class="edu-degree">學士</span>
+      <span>國立台北大學 <span class="edu-dept">社會學系</span></span>
+      <span class="edu-year">1999</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">工作經歷</div>
+
+    <div class="exp-block">
+      <div class="exp-org">財團法人人智學教育基金會</div>
+      <div class="exp-meta">
+        <span class="role">執行長</span>
+        <span class="period">2024 — 現在</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>主導與宜蘭縣政府公辦民營計畫的核心政策對話</li>
+        <li>經營家長社群文化，為教師自治撐出辦學與教學空間</li>
+        <li>監督兩校區合併新建工程（總經費約 1 億 3,000 萬元）</li>
+        <li>主辦首屆 ITEF 亞太師培會議，連結紐西蘭、日本、菲律賓等多國師培機構</li>
+        <li>師培體系維運：兩年基礎養成 + 兩年專業進階，2025 年參與人數共 117 人</li>
+      </ul>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-org">財團法人人智學教育基金會</div>
+      <div class="exp-meta">
+        <span class="role">副執行長</span>
+        <span class="period">2020 — 2024</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>公部門辦學合約對話，定期向董事會呈現年度辦學成果</li>
+        <li>主持行政會報，協調跨部門事務</li>
+      </ul>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-org">財團法人人智學教育基金會</div>
+      <div class="exp-meta">
+        <span class="role">職員</span>
+        <span class="period">2018 — 2020</span>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-org">慈心華德福高中</div>
+      <div class="exp-meta">
+        <span class="role">兼課教師</span>
+        <span class="period">2018 — 現在</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>結合 15 年廣告實務，深耕媒體素養與品牌溝通教育</li>
+      </ul>
+      <div class="course-tags">
+        <a class="course-tag" href="https://htmlpreview.github.io/?https://gist.githubusercontent.com/vernachen327-eng/34b3840800c1f256e85f25fb40c86b76/raw/c5a80b384e7e224eb8dd7bf584a70d530865051d/2026-08_%E5%93%81%E7%89%8C%E6%BA%9D%E9%80%9A%E7%9A%84%E8%97%9D%E8%A1%93_%E7%A7%8B%E5%86%AC%E8%AA%B2%E7%A8%8B%E5%A4%A7%E7%B6%B1.html" target="_blank">品牌溝通的藝術（混齡選修 10–12 年級）</a>
+        <span class="course-tag">12 年級定錨選修</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="section-label">廣告暨行銷職涯</div>
+    <table class="career-table">
+      <tr><td>墾作創意股份有限公司</td><td>創辦人</td></tr>
+      <tr><td>北京奧美廣告</td><td>客戶群總監</td></tr>
+      <tr><td>北京尚沃霖音樂學院</td><td>講師</td></tr>
+      <tr><td>聯合利華</td><td>品牌經理</td></tr>
+      <tr><td>麥肯廣告</td><td>企劃總監</td></tr>
+      <tr><td>華研唱片</td><td>執行企劃</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-label">媒體與內容創作</div>
+    <ul class="media-list">
+      <li><strong>心抱抱</strong> — 教育與生活類別 Podcast 暨 Facebook 專頁，長期獲登 Apple Podcast 台灣分類排行榜</li>
+      <li>長期拍攝慈心華德福學校紀錄片</li>
+      <li>主責學校與基金會社群媒體經營及大型活動策劃執行</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">專業關注</div>
+    <div class="focus-tags">
+      <span class="focus-tag">華德福教育治理與組織發展</span>
+      <span class="focus-tag">媒體素養與自媒體教育</span>
+      <span class="focus-tag">創意產業人才培育</span>
+      <span class="focus-tag">師資培訓體系建構</span>
+    </div>
+  </section>
+
+</div>
+
+<footer>Let things become. &nbsp;✦&nbsp; Verna</footer>
+
+</body>
+</html>
