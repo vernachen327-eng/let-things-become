@@ -29,6 +29,19 @@
 .article-body .day b { color: var(--accent); font-weight: 500; }
 .article-body .sources a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 560px) { .article-body .pair { grid-template-columns: 1fr; } }
+.article-body .stages { display: flex; align-items: center; justify-content: center; gap: .7rem; margin: 1.4rem 0 2rem; }
+.article-body .stage { flex: 1 1 0; text-align: center; padding: 1rem .5rem; border-radius: 999px; background: rgba(255,255,255,.2); border: 1.5px solid var(--accent); font-size: 1.1rem; letter-spacing: .12em; line-height: 1.6; }
+.article-body .stage .n { display: block; font-size: .75rem; color: var(--accent); letter-spacing: .2em; }
+.article-body .arrow { color: var(--accent); font-size: 1.3rem; }
+@media (max-width: 560px) { .article-body .stages { flex-direction: column; } .article-body .stage { width: 70%; } .article-body .arrow { transform: rotate(90deg); } }
+.article-body .topics { border: 1px solid var(--border); border-radius: 6px; padding: .6rem 1.2rem; margin: 0 0 1.6rem; background: rgba(255,255,255,.18); }
+.article-body .topics p { margin: .5rem 0; }
+.article-body .topics b { display: block; color: var(--accent); font-weight: 500; }
+.article-body .flow { overflow-x: auto; margin: 0 0 1.8rem; }
+.article-body .flow table { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.7; }
+.article-body .flow th, .article-body .flow td { border-bottom: 1px solid var(--border); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+.article-body .flow th { color: var(--accent); font-weight: 500; }
+.article-body .flow td:nth-child(1), .article-body .flow td:nth-child(2) { white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -247,6 +260,33 @@
   <li><a href="https://www.anthroposophyyilan.org.tw/news/index.php?object=186" target="_blank">【人哲 11 期，2017】慈心華德福高中蘇澳校區翻修紀實</a>　社群夥伴／陳雅慧</li>
   <li><a href="https://www.anthroposophyyilan.org.tw/heart/event/index.php?object=211" target="_blank">參與慈心華德福高中部（蘇澳校區）修繕　與心對話</a>　社群夥伴／李冠霆</li>
 </ul>
+
+<h2><span class="date">2027 年夏天</span>下一個夏天</h2>
+<p>十二年前，我們一起把蘇澳的舊樓修成了家。明年夏天，換我們一起把家搬回冬山。</p>
+<p>這一次的搬遷，不打算全部交給搬家公司。大型或難處理的物件交給專業，其他的，我們想讓「家校協力」再發生一次，讓每一個人都能參與、都被看見。</p>
+<p>搬遷分成三個階段：</p>
+<div class="stages">
+  <div class="stage"><span class="n">1</span>感恩告別</div>
+  <div class="arrow" aria-hidden="true">→</div>
+  <div class="stage"><span class="n">2</span>快樂搬遷</div>
+  <div class="arrow" aria-hidden="true">→</div>
+  <div class="stage"><span class="n">3</span>歡喜入厝</div>
+</div>
+<p>我們一起來構想。</p>
+<div class="topics">
+  <p><b>第一題｜告別蘇澳</b>如何舉辦告別蘇澳舊校區的儀式或活動？</p>
+  <p><b>第二題｜招募搬遷</b>如何招募人力與車輛？搬家過程可以怎麼執行或設計得更有趣？</p>
+  <p><b>第三題｜入厝</b>如何舉辦迎新慶祝活動？</p>
+</div>
+<div class="flow"><table>
+  <thead><tr><th>階段</th><th>時間</th><th>進行方式與規則</th></tr></thead>
+  <tbody>
+    <tr><td>開場與分組</td><td>約 5 分鐘</td><td>現場抽籤分組（共 4 組），說明三大討論題目與規則。</td></tr>
+    <tr><td>分組發想討論</td><td>45 分鐘</td><td>各組針對三個階段發想 Idea，寫在便利貼並貼於白報紙上。規則：每個提案需取一個名字（例如：1000 個後備箱），方便後續溝通。</td></tr>
+    <tr><td>各組上台分享</td><td>40 分鐘</td><td>每組限時 10 分鐘（4 組共 40 分鐘）。</td></tr>
+    <tr><td>投票與認領</td><td>10 分鐘</td><td>全員進行投票，選出各階段最高票的 Idea，並確認後續認領執行的夥伴。</td></tr>
+  </tbody>
+</table></div>
     </article>
     <footer>Let things become. &nbsp;✦&nbsp; Verna</footer>
 </body>
